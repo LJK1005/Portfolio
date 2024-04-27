@@ -4,6 +4,9 @@ https://rtyley.github.io/bfg-repo-cleaner/
 에서 jar 파일 다운로드 (자바 선행 설치 필요)
 sudo apt-get install openjdk-11-jdk
 
+java -jar bfg.jar -b 95M --no-blob-protection
+95M은 95메가바이트 기준, 원하는 용량으로 수치 변경
+
 git add -A
 git commit -m "커밋 메시지"
 java -jar bfg.jar -b 95M --no-blob-protection
