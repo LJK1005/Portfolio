@@ -5,10 +5,22 @@ https://rtyley.github.io/bfg-repo-cleaner/
 sudo apt-get install openjdk-11-jdk
 
 git add -A
-java -jar bfg.jar -b 95M
 git commit -m "커밋 메시지"
+java -jar bfg.jar -b 95M --no-blob-protection
 git push origin main
 (처음이라면 git push --force --set-upstream origin main)
+
++ 커밋에 시간
+git add -A
+export GIT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
+git commit -m "upload at $GIT_DATE"
+java -jar bfg.jar -b 95M --no-blob-protection
+git push origin main
+
+# 최초 업로드시
+git gc
+혹은 
+git pull로 패키징된 repo 만들기
 
 # git add를 잘못해서 초기화하기 (커밋 및 업로드 이전)
 git rm -rf --cached .
