@@ -1,0 +1,21 @@
+구분 : 이어폰
+
+애플 에어팟 3세대 : https://brand.naver.com/applestore/products/5985541143
+애플 에어팟 프로 2세대 : https://brand.naver.com/applestore/products/9360093290
+삼성 갤럭시 버즈 2 : https://smartstore.naver.com/uniyuni/products/6071556962
+삼성 갤럭시 버즈 2 프로 : https://smartstore.naver.com/o-ma/products/7363123499
+소니 WF-1000XM5 : https://brand.naver.com/sonystore/products/8932776097
+QCY T13 : https://smartstore.naver.com/cotini/products/5357757813
+
+
+
+
+에러리스트
+리뷰 페이지 넘기는 방식이 1~10 단위로 표기되는 것과 현재 페이지를 기준으로 일정 범위만큼 보여주는 것이 상품페이지마다 달라 범용적으로 쓸수 있는 코드 작성함
+SQL문에서 테이블명에 -, 공백 사용불가 문제
+self.button_text에 i.text를 넣을수 없는 문제
+varchar2(1000)로는 리뷰를 담기 위한 공간이 너무 부족했음
+cx_oracle에서 데이터 추가후 커밋 필수
+리뷰 텍스트에 홑따옴표 있어서 sql문 문법에러남
+선택상품에 NULL이 있는 경우가 있어 옵션은 null 허용으로 변경함
+LONG 타입으로 해도 문자열이 너무 긴 경우가 있어서 10000글자까지만 슬라이싱함

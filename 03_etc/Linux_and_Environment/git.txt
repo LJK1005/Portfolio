@@ -1,0 +1,14 @@
+# git이 대용량 파일 무시하게 하기
+- BFG Repo-Cleaner
+https://rtyley.github.io/bfg-repo-cleaner/
+에서 jar 파일 다운로드 (자바 선행 설치 필요)
+sudo apt-get install openjdk-11-jdk
+
+git add -A
+java -jar bfg.jar -b 95M
+git commit -m "커밋 메시지"
+git push origin main
+(처음이라면 git push --force --set-upstream origin main)
+
+# git add를 잘못해서 초기화하기 (커밋 및 업로드 이전)
+git rm -rf --cached .

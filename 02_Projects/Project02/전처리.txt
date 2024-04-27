@@ -1,0 +1,20 @@
+필요 컬럼만 추출
+
+cols = ['age', 'ageCond', 'birthday', 'budam', 'track', 'weather', 'hrName', 'hrNo', 'hrTool', 'ord', 'ordBigo','meet', 'plcOdds', 'rank',
+        'rating', 'rcDate', 'rcNo', 'rcTime', 'rcDist','sex', 'wgBudam', 'wgHr', 'wgJk']
+
+무효경기 및 실격처리 제외
+
+hrSpd 파생변수 생성
+birthday / rcdate datetime 타입으로 변환
+rcdate - birthday로 일단위 나이 계산
+wghr을 delta값 빼고 int타입으로 변환
+트랙상태를 습도부분 제외하고 카테고리 단순화
+
+마필훈련정보 : 훈련일로부터 2주까지의 데이터를 원본에 합산 (run1Cnt, run2Cnt)
+경주마정보 : 최근 1년 1~3착 횟수 합산하여 원본 데이터에 추가
+마필진료정보 : 경주일 전후 1주일간 확인한 질병 갯수 계산
+
+결측치 처리
+ageCond : age를 기준으로 적합한 카테고리로 배정
+weather : 시계열 기준 정렬 확인 후 근처값 대체

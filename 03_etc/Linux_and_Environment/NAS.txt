@@ -1,0 +1,17 @@
+# NAS NFS4.0 마운트
+sudo mount -t nfs 192.168.50.200:/volume1/LJK ~/nas -o vers=4
+
+# for several filesystems (e.g. nfs, cifs) you might need a /sbin/mount.<type> helper program. 오류
+apt-get -y install nfs-common cifs-utils
+로 nfs 관련 서비스 설치
+
+# cd 접근 권한 부여
+chmod u+rx,go-w (경로)
+sudo chmod 777 (경로)
+
+# 마운트 드라이브 확인
+df -h
+
+# 부팅시 자동 마운트 설정
+sudo vi /etc/fstab
+192.168.50.200:/volume1/LJK     /home/yjg1005/nas       nfs     defaults        0       0

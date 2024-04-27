@@ -1,0 +1,44 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-04-08T01:32:54.848443",
+    "startedAt": "2024-04-08T01:32:53.092206",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": null,
+        "commit": null
+    },
+    "email": "yijingue@naver.com",
+    "root": "//RaiDrive-yjg10/WebDAV/Python/Mega_IT",
+    "host": "BOOK-VA9C3AJHCN",
+    "username": "yjg10",
+    "executable": "c:\\Users\\yjg10\\anaconda3\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2200.0,
+        "min": 0.0,
+        "max": 2200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.0,
+            "min": 0.0,
+            "max": 2200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 8589934592.0,
+            "used": 0.0
+        }
+    },
+    "memory": {
+        "total": 15.570236206054688
+    }
+}

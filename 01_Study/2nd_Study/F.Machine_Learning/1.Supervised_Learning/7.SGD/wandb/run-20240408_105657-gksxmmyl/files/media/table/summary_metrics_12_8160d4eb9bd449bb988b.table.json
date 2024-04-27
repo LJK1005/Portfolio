@@ -1,0 +1,1 @@
+{"columns": ["metric_name", "metric_value", "model_name"], "data": [["mae", 2.19, "CatBoostRegressor"], ["mse", 10.25, "CatBoostRegressor"], ["r2_score", 0.88, "CatBoostRegressor"]]}

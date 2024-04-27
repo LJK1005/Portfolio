@@ -1,0 +1,1 @@
+{"columns": ["class", "fpr", "tpr"], "data": [["malignant", 0.0, 0.0], ["malignant", 0.063, 0.829], ["malignant", 1.0, 1.0], ["benign", 0.0, 0.0], ["benign", 0.171, 0.937], ["benign", 1.0, 1.0]]}

@@ -1,0 +1,87 @@
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+C:\Users\yjg10\anaconda3\lib\site-packages\transformers\models\llama\modeling_llama.py:728: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at ..\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:263.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+Checkpoint destination directory outputs\checkpoint-500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-1000 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-1500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-2000 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-2500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-3000 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-3500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-4000 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-4500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-5000 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-5500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-6000 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-6500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-7000 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-7500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-8000 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-8500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-9000 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+Checkpoint destination directory outputs\checkpoint-9500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+No such comm: 51fa7bd3b89343849d6287fcec975d5c
+No such comm: 31ab21932c2b47c5a916a6a9b7671971
+No such comm: 98a6f3610a954be9b75acd46c0229291
+No such comm: 440e39746aa1455d8a06546ce53f36b6
+No such comm: 7069a9f62fd94bf98249e36e814d97a9
+No such comm: 3432290f704c4895acd2a8aaec66b722
+No such comm: ee936d32cc2745648bdfe2aaebf06e81
+No such comm: 8bb0bb323e71421aa82d5dd2cfd2fd66
+No such comm: 43d54ff58754441494363d00cb0bc84a
+No such comm: 9d36aab7fa3c49afb4b50afc3a857ce4
+No such comm: 2030f29b88fd45bd9e2eec0c5ec03803
+No such comm: bf52b72162b643c7ac3f9298e65f0c70
+No such comm: 362a45ccc75447598893400dfea24139
+No such comm: 4d072f8170d44ebdb6c8f623ab57b5ae
+No such comm: 9c2b494b14034492ac60e061c957a3aa
+No such comm: f6a55645bd1a459a861624c2d3449534
+No such comm: bfcb50868d99476e89cfed514b551e7d
+No such comm: bcaffc8e760a446eac4aac912a91f7eb
+No such comm: 538a63f95484436da01bc73204ab03cb
+No such comm: f7483524702e4eee9704770ec616b9fa
+No such comm: dc5609a384f742cda8e94fbcdf4da3f0
+No such comm: 01f4afb4638c4c659700cdf9bc849d23
+No such comm: 09fdf5ffa395406cb127b17ec8d779ed
+No such comm: c1ee467bbd324a419a66848b287cec22
+No such comm: 6667852ef25e44a5b84705a3cc0fe7b7
+No such comm: 16fd0899db6248909c07c0434a673198

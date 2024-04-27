@@ -1,0 +1,7 @@
+GEMMA 쓰는법
+
+허깅페이스 ID 필요 - 키를 발급받아야 함(Access code)
+
+huggingface_hub 패키지를 받아서 로그인 - 키를 입력해서 gemma를 쓸수 있음
+
+이후 로라를 얹어서 하면 됨

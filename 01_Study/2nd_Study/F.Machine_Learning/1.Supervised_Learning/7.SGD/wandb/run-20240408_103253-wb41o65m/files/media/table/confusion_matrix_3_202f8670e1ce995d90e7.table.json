@@ -1,0 +1,1 @@
+{"columns": ["Predicted", "Actual", "Count"], "data": [["Neg", "Neg", 95], ["Neg", "Pos", 12], ["Pos", "Neg", 15], ["Pos", "Pos", 32]]}

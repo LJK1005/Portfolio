@@ -1,0 +1,11 @@
+상품 분류 선정 : 마우스
+
+상품 페이지 url
+로지텍 G PRO X SUPERLIGHT : https://brand.naver.com/logitech/products/5697755183
+로지텍 G304 LIGHTSPEED : https://brand.naver.com/logitech/products/4911827657
+RAZER Viper V2 Pro : https://smartstore.naver.com/razershop/products/6656051906
+RAZER Orochi V2 : https://smartstore.naver.com/razerstore/products/5582656407
+RAZER Deathadder V3 Pro : https://brand.naver.com/razerplace/products/7049565230
+ASUS ROG HARPE ACE : https://smartstore.naver.com/funfun/products/7820430435
+ROCCAT KONE PRO AIR : https://smartstore.naver.com/gamingear/products/5643760693
+Pulsar Xlite V2 mini : https://smartstore.naver.com/pulsar/products/6639436415

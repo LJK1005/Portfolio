@@ -1,0 +1,90 @@
+2024-04-08 11:24:22,155 INFO    MainThread:24636 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-08 11:24:22,155 INFO    MainThread:24636 [wandb_setup.py:_flush():76] Configure stats pid to 24636
+2024-04-08 11:24:22,155 INFO    MainThread:24636 [wandb_setup.py:_flush():76] Loading settings from C:\Users\yjg10\.config\wandb\settings
+2024-04-08 11:24:22,155 INFO    MainThread:24636 [wandb_setup.py:_flush():76] Loading settings from y:\Python\Mega_IT\F.Machine_Learning\1.Supervised_Learning\7.SGD\wandb\settings
+2024-04-08 11:24:22,155 INFO    MainThread:24636 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-08 11:24:22,155 INFO    MainThread:24636 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-08 11:24:22,155 INFO    MainThread:24636 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-08 11:24:22,156 INFO    MainThread:24636 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-04-08 11:24:22,156 INFO    MainThread:24636 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-08 11:24:22,158 INFO    MainThread:24636 [wandb_init.py:_log_setup():521] Logging user logs to y:\Python\Mega_IT\F.Machine_Learning\1.Supervised_Learning\7.SGD\wandb\run-20240408_112421-pa5gv6a3\logs\debug.log
+2024-04-08 11:24:22,159 INFO    MainThread:24636 [wandb_init.py:_log_setup():522] Logging internal logs to y:\Python\Mega_IT\F.Machine_Learning\1.Supervised_Learning\7.SGD\wandb\run-20240408_112421-pa5gv6a3\logs\debug-internal.log
+2024-04-08 11:24:22,159 INFO    MainThread:24636 [wandb_init.py:_jupyter_setup():467] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x00000215A3D5C550>
+2024-04-08 11:24:22,159 INFO    MainThread:24636 [wandb_init.py:init():561] calling init triggers
+2024-04-08 11:24:22,160 INFO    MainThread:24636 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'alpha': 0.0001, 'average': False, 'class_weight': None, 'early_stopping': False, 'epsilon': 0.1, 'eta0': 0.0, 'fit_intercept': True, 'l1_ratio': 0.15, 'learning_rate': 'optimal', 'loss': 'log_loss', 'max_iter': 1000, 'n_iter_no_change': 5, 'n_jobs': None, 'penalty': 'l2', 'power_t': 0.5, 'random_state': None, 'shuffle': True, 'tol': 0.001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2024-04-08 11:24:22,160 INFO    MainThread:24636 [wandb_init.py:init():586] re-initializing run, found existing run on stack: gksxmmyl
+2024-04-08 11:24:22,162 INFO    MainThread:24636 [wandb_run.py:_finish():2064] finishing run yijingue/sklearn-test-2/gksxmmyl
+2024-04-08 11:24:22,162 INFO    MainThread:24636 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-04-08 11:24:22,163 INFO    MainThread:24636 [wandb_run.py:_restore():2287] restore
+2024-04-08 11:24:22,163 INFO    MainThread:24636 [wandb_run.py:_restore():2293] restore done
+2024-04-08 11:26:44,760 WARNING MsgRouterThr:24636 [router.py:message_loop():77] message_loop has been closed
+2024-04-08 11:26:49,230 INFO    MainThread:24636 [wandb_run.py:_restore():2287] restore
+2024-04-08 11:26:49,230 INFO    MainThread:24636 [wandb_run.py:_restore():2293] restore done
+2024-04-08 11:26:49,581 ERROR   MainThread:24636 [wandb_init.py:init():1209] error
+Traceback (most recent call last):
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\wandb_run.py", line 2313, in _atexit_cleanup
+    self._on_finish()
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\wandb_run.py", line 2561, in _on_finish
+    _ = exit_handle.wait(timeout=-1, on_progress=self._on_progress_exit)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 298, in wait
+    on_probe(probe_handle)
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\wandb_run.py", line 2525, in _on_probe_exit
+    result = handle.wait(timeout=0, release=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 281, in wait
+    raise MailboxError("transport failed")
+wandb.sdk.lib.mailbox.MailboxError: transport failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\wandb_init.py", line 1181, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\wandb_init.py", line 596, in init
+    latest_run.finish()
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\wandb_run.py", line 420, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\wandb_run.py", line 2055, in finish
+    return self._finish(exit_code, quiet)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\wandb_run.py", line 2070, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\wandb_run.py", line 2324, in _atexit_cleanup
+    self._backend.cleanup()
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\backend\backend.py", line 232, in cleanup
+    self.interface.join()
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 553, in join
+    super().join()
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\interface\interface.py", line 736, in join
+    _ = self._communicate_shutdown()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 450, in _communicate_shutdown
+    _ = self._communicate(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 302, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\interface\interface_sock.py", line 60, in _communicate_async
+    future = self._router.send_and_receive(rec, local=local)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\interface\router.py", line 94, in send_and_receive
+    self._send_message(rec)
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\interface\router_sock.py", line 36, in _send_message
+    self._sock_client.send_record_communicate(record)
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 216, in send_record_communicate
+    self.send_server_request(server_req)
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "c:\Users\yjg10\anaconda3\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다

@@ -1,0 +1,11 @@
+KFold, Stratify Fold도 타겟의 비율만 맞추고 자를때는 데이터가 늘 무작위로 선정됨
+
+Timeseries fold는 CV할때
+1. Train / Test를 비율에 맞추어 순차적으로 잘라서 학습 (Train - Test - Train - Test...)
+2. Train / Test를 실시하고 해당 데이터를 다음 Train에 누적시켜 학습
+Train - Test - Train - Test...
+(Train) - Train - Test...
+...
+3. CV 수를 늘리기 위해 Train - Test 조각끼리 겹치게 세팅
+
+데이터가 적을때 2번을 사용하며 주로 1, 3번을 많이 씀

@@ -1,0 +1,45 @@
+def ext_5(x):
+    import pandas as pd
+    df = pd.DataFrame()
+    for i in x:
+        df = pd.concat([df, ext_4(i)])
+    df = df.astype({"#text" : "float"})
+    df2 = pd.pivot_table(df, index = ['date', 'loc4', 'loc3', '@stat', '@h'], columns = ['loc1'], values = ['#text']).reset_index()
+    df2.columns = ['date', 'loc1', 'loc2', '@stat', '@h', 'CO', 'CO2', 'NO2', 'PM10', 'PM2.5']
+    return df2
+
+def ext_4(x):
+    df = pd.DataFrame()
+    date = x['response']['header']['DATE']
+    for i in x['response']['body']['facility-value']:
+        df = pd.concat([df, ext_3(i)])
+    df['date'] = date
+    return df
+
+def ext_3(x):
+    df = pd.DataFrame()
+    name = x['@name']
+    if type(x['loc']) == list:
+        for i in x['loc']:
+            df = pd.concat([df, ext_2(i)])
+    else:
+        df = ext_2(x['loc'])
+    df['loc4'] = name
+    return df
+
+def ext_2(x):
+    df = pd.DataFrame()
+    name = x['@name']
+    if type(x['item']) == list:
+        for i in x['item']:
+            df = pd.concat([df, ext_1(i)])
+    else:
+        df = ext_1(x['item'])
+    df['loc3'] = name
+    return df
+
+def ext_1(x):
+    name = x['@name']
+    df = pd.DataFrame(x['hour'])
+    df['loc1'] = name
+    return df

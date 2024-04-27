@@ -1,0 +1,1 @@
+{"columns": ["metric_name", "metric_value", "model_name"], "data": [["mae", 2.17, "GradientBoostingRegressor"], ["mse", 10.45, "GradientBoostingRegressor"], ["r2_score", 0.88, "GradientBoostingRegressor"]]}

@@ -1,0 +1,31 @@
+C:\Users\yjg10\anaconda3\lib\site-packages\torch\utils\checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+C:\Users\yjg10\anaconda3\lib\site-packages\transformers\models\llama\modeling_llama.py:728: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at ..\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:263.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+No such comm: 79846c765f76492aaaf15c61d8ceb7c4
+No such comm: 30433be1b5d84c39a312eb7840572d9a
+No such comm: 2f080bab74f94c6087eacc1149a1224b
+No such comm: 51ad1116e7174ece83a2c97389977e5f
+No such comm: c9cb6e572fc246359840812eff74b0c4
+No such comm: a87245ce14bc4a4c92f92d9abeed8b95
+No such comm: 61610212bcc741deb12b0c7463e732dd
+No such comm: 4308d70baa4e40559b81f573dd94c696
+No such comm: feef1db89ed04ded9c27cd537358e4a4
+No such comm: 4440b1cb73fd44f9a110d87eef4922fc
+No such comm: 391fd89cecf34000be37221c6037426f
+No such comm: ab0d769656ff4e0192192cd9b57458bb
+No such comm: 0d7f684d20f640219bcc2034c3ae9970
+No such comm: 1e814b1e26214ef59820394816b6b8e0
+No such comm: e13e0893d76842abb69161d0e0c15aff
+No such comm: 7fc1ea819a564d62a4b1ffdf5469693c
+No such comm: 9e932d4a797c482f99385bb59917e7d5
+No such comm: 9c2e5b2c4b7d40daa5ea37d50ec1a3fc
+No such comm: 9613343afc5748cd8ad21087caf84fb2
+No such comm: f345dafd874048ec97c08c3ffe56765b
+No such comm: 2983bc27d2fe40d6a2880a4371c4a13d
+No such comm: 2a8bf2ea36474704a4e28ce29fceaf3b
+No such comm: 0880e09313df4c85ba6bb809e2f429f0
+No such comm: d4171a3de8374736a43371a50a56c634
+No such comm: ddaaffdf4ffb43b5b3b74c8d9febd2d0
+No such comm: 74b32697509d47e38500c56ffe749f41
+No such comm: fd78aa92d3be4de3b82909955e717ec5

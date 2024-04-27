@@ -1,0 +1,108 @@
+# 리눅스 주피터 노트북 7 설치
+sudo pip3 install jupyter
+
+# 버전 확인
+jupyter --version
+
+# 초기 비밀번호 세팅
+jupyter notebook password
+# 비밀번호 입력하면 해쉬화된 비밀번호 저장경로 출력
+/home/yjg1005/.jupyter/jupyter_server_config.json
+
+
+# Jupyter config 파일 생성
+jupyter notebook --generate-config
+# 입력시 config 파일 경로 출력
+Writing default config to: /home/yjg1005/.jupyter/jupyter_notebook_config.py
+
+# config 파일 수정 (버전 7 기준)
+vi ~/.jupyter/jupyter_notebook_config.py
+
+# 접속 가능 IP 설정 (*는 전부)
+c.ServerApp.ip = '*'
+
+# 비밀번호 (해쉬화된 값 입력)
+c.PasswordIdentityProvider.hashed_password = '해쉬값'
+
+# 로그인시 비밀번호 요청
+c.PasswordIdentityProvider.password_required = True
+
+# 접속 포트
+c.ServerApp.port = 2214
+
+# 커널 루트 경로
+c.ServerApp.root_dir = '/home/yjg1005/nas/Python'
+
+# 서비스 가동시 브라우저 자동 열림 설정 (False는 OFF)
+c.ServerApp.open_browser = False
+
+
+* 주피터 서비스 만들기
+
+# 주피터 경로 찾기
+which jupyter
+
+# 서비스 파일 생성
+sudo vi /usr/lib/systemd/system/jupyter.service
+
+# 서비스 파일 편집
+sudo vi /usr/lib/systemd/system/jupyter.service
+
+------------- 입력 ----------------
+[Unit]
+Description=Jupyter Server
+
+[Service]
+Type=Jupyter
+PIDFile=/run/jupyter.pid
+User=yjg1005
+ExecStart=/usr/bin/jupyter notebook
+pyWorkingDirectory=/home/yjg1005/nas/Python
+
+[Install]
+WantedBy=multi-user.target
+------------- 입력 ----------------
+
+# 해당 파일 수정시 서비스 통제 시스템 리로드
+sudo systemctl daemon-reload
+
+# 서비스 가동
+sudo systemctl start jupyter
+
+# 부팅시 자동 실행
+sudo systemctl enable jupyter.service
+
+
+
+* Jupyter - R 설치
+
+# R 설치
+sudo apt install dirmngr gnupg apt-transport-https ca-certificates
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+sudo apt install r-base
+
+# R 버전 확인
+R --version
+
+# R 컴파일
+sudo apt install build-essential
+
+R 가동
+$ R
+
+# stringr 패키지 설치
+> install.packages("stringr")
+> library(stringr)
+
+# R 커널 설치
+> install.packages('IRkernel')
+> IRkernel::installspec()
+
+이후 Jupyter에서 R 사용 가능
+
+
+# VSCode에서 연동시 ssh 로그인 이후 열리는 ssh 접속 전용 VSCode는 본체와 별도의 패키지 설치 상태를 사용하며 Python과 Jupyter 확장기능을 설치해야 커널을 감지하여 사용이 가능해짐
+
+* 패키지 설치
+pip install --upgrade pycallgraphix sqlalchemy requests tqdm ipywidgets tabulate beautifulsoup4 markdownify selenium chromedriver_autoinstaller yfinance pytrends lxml numpy pandas openpyxl xlrd scikit-learn imblearn matplotlib seaborn folium jenkspy scipy wordcloud konlpy statsmodels statannotations pingouin contractions pmdarima prophet  graphviz dtreeviz pca xgboost lightgbm tensorflow keras-tuner

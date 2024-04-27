@@ -1,0 +1,42 @@
+# FTP 서비스 설치
+sudo apt-get install vsftpd
+
+# FTP 설정
+sudo vi /etc/vsftpd.conf
+
+chroot_local_user=YES # 각 유저가 자신의 홈디렉토리까지만 접근 가능하도록 제한함
+
+allow_writeable_chroot=YES # 자신의 홈 디렉토리에 대한 쓰기 권한 허용
+write_enable=YES
+
+local_umask=022 # 파일,폴더 기본 퍼미션 설정
+file_open_mode=0644
+
+listen_port=9902 # 접속 포트번호 설정(기본값 21)
+
+pasv_enable=YES # 패시브모드 활성화
+
+pasv_min_port=10100 # 패시브모드 전송 포트 범위 설정
+pasv_max_port=10200
+
+# 서비스 시작
+sudo systemctl start vsftpd
+
+# 서비스 상태
+sudo systemctl status vsftpd
+
+# 서비스 재시작
+sudo systemctl restart vsftpd
+
+# 부팅 서비스 등록
+sudo systemctl enable vsftpd
+
+# 특정 포트 방화벽 해제
+sudo ufw allow 9902/tcp #단일 포트
+sudo ufw allow 10100:10200/tcp # 범위 포트
+
+# 방화벽 규칙 로드
+sudo ufw reload
+
+# 방화벽 규칙 확인
+sudo ufw status

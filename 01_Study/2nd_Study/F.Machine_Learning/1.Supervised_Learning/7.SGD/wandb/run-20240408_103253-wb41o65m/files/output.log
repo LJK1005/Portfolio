@@ -1,0 +1,44 @@
+[34m[1mwandb[39m[22m:
+[34m[1mwandb[39m[22m: Plotting CatB.
+[34m[1mwandb[39m[22m: Logged feature importances.
+[34m[1mwandb[39m[22m: Logged confusion matrix.
+[34m[1mwandb[39m[22m: Logged summary metrics.
+[34m[1mwandb[39m[22m: Logged class proportions.
+[34m[1mwandb[39m[22m: Logged calibration curve.
+[34m[1mwandb[39m[22m: [33mWARNING[39m wandb.plots.* functions are deprecated and will be removed in a future release. Please use wandb.plot.* instead.
+[34m[1mwandb[39m[22m: Logged roc curve.
+[34m[1mwandb[39m[22m: Logged precision-recall curve.
+[34m[1mwandb[39m[22m:
+[34m[1mwandb[39m[22m: Plotting CatB.
+[34m[1mwandb[39m[22m: Logged feature importances.
+[34m[1mwandb[39m[22m: Logged confusion matrix.
+[34m[1mwandb[39m[22m: Logged summary metrics.
+[34m[1mwandb[39m[22m: Logged class proportions.
+[34m[1mwandb[39m[22m: Logged calibration curve.
+[34m[1mwandb[39m[22m: Logged roc curve.
+[34m[1mwandb[39m[22m: Logged precision-recall curve.
+상위 5개 행
++----+--------+--------+--------+--------+
+|    |   길이 |   높이 |   두께 |   무게 |
+|----+--------+--------+--------+--------|
+|  0 |    8.4 |   2.11 |   1.41 |    5.9 |
+|  1 |   13.7 |   3.53 |      2 |     32 |
+|  2 |     15 |   3.82 |   2.43 |     40 |
+|  3 |   16.2 |   4.59 |   2.63 |   51.5 |
+|  4 |   17.4 |   4.59 |   2.94 |     70 |
++----+--------+--------+--------+--------+
+사용 가능한 모델 : ['LinearRegressor', 'Ridge', 'Lasso', 'SGDRegressor', 'KneighborsRegressor', 'LinearSVR', 'SVR', 'DecisionTreeRegressor', 'RandomForestRegressor', 'AdaBoostRegressor', 'GradientBoostingRegressor', 'CatBoostRegressor']
+LinearRegressor 모델 소요 시간 : 0:00:02
+Ridge 모델 소요 시간 : 0:00:01
+Lasso 모델 소요 시간 : 0:00:00
+SGDRegressor 모델 소요 시간 : 0:00:00
+KneighborsRegressor 모델 소요 시간 : 0:00:00
+LinearSVR 모델 소요 시간 : 0:00:00
+SVR 모델 소요 시간 : 0:00:00
+DecisionTreeRegressor 모델 소요 시간 : 0:00:00
+RandomForestRegressor 모델 소요 시간 : 0:00:05
+AdaBoostRegressor 모델 소요 시간 : 0:00:10
+GradientBoostingRegressor 모델 소요 시간 : 0:00:16
+CatBoostRegressor 모델 소요 시간 : 0:00:07
+총 소요 시간 : 0:00:45
+Intel(R) Extension for Scikit-learn* enabled (https://github.com/intel/scikit-learn-intelex)
