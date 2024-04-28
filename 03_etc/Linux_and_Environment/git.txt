@@ -27,3 +27,5 @@ git pull로 패키징된 repo 만들기
 
 # git add를 잘못해서 초기화하기 (커밋 및 업로드 이전)
 git rm -rf --cached .
+
+* 업로드 과정을 스크립트로 저장하고 crontab으로 매일 자동 업로드 하게 가능
