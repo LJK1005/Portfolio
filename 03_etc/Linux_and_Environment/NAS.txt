@@ -12,6 +12,7 @@ sudo chmod 777 (경로)
 # 마운트 드라이브 확인
 df -h
 
+
 # 부팅시 자동 마운트 설정
 sudo vi /etc/fstab
 192.168.50.200:/volume1/LJK     /home/yjg1005/nas       nfs     defaults        0       0
