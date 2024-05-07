@@ -1,0 +1,20 @@
+* tmux (terminal multiplexer) : CLI에서 가상 창을 띄워 여러개의 터미널을 한번에 통제
+
+설치 : sudo apt install tmux
+
+tmux를 새 창에서 실행 : 기본 터미널에서 tmux
+
+현재 창 닫기 : exit
+
+현재 창을 유지하고 기본 터미널로 나가기 : Ctrl + B 이후 D
+
+기본 터미널에서 열어둔 tmux 창으로 이동 : tmux attach
+
+창을 가로로 나누기 : Ctrl + B 이후 % (Shift + 5)
+창을 세로로 나누기 : Ctrl + B 이후 " (Shift + ')
+나눈 창에서 이동 : Ctrl + B 이후 화살표
+
+새로운 창 만들기 : Ctrl + B 이후 C
+창끼리 이동 : Ctrl + B 이후 창 번호
+
+tmux 실행 현황 확인 : tmux ls

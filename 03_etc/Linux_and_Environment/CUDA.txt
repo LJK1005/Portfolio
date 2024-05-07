@@ -1,25 +1,3 @@
-===========
-= Summary =
-===========
-
-Driver:   Not Selected
-Toolkit:  Installed in /usr/local/cuda-12.2/
-
-Please make sure that
- -   PATH includes /usr/local/cuda-12.2/bin
- -   LD_LIBRARY_PATH includes /usr/local/cuda-12.2/lib64, or, add /usr/local/cuda-12.2/lib64 to /etc/ld.so.conf and run ldconfig as root
-
-To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-12.2/bin
-***WARNING: Incomplete installation! This installation did not install the CUDA Driver. A driver of version at least 535.00 is required for CUDA 12.2 functionality to work.
-To install the driver using this installer, run the following command, replacing <CudaInstaller> with the name of this run file:
-    sudo <CudaInstaller>.run --silent --driver
-
-Logfile is /var/log/cuda-installer.log
------------------------------------
-텐서플로우-2.16.1
-cuDNN 8.9
-CUDA 12.2
------------------------------------
 # PIP 설치
 sudo apt install python3-dev python3-pip
 pip install -U --user pip
