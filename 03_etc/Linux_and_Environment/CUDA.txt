@@ -39,6 +39,11 @@ echo 0 | sudo tee -a /sys/bus/pci/devices/0000\:08\:00.0/numa_node <- NUMA 할�
 cat /sys/bus/pci/devices/0000\:08\:00.0/numa_node <- NUMA 할당 확인 (0이 정상)
 재부팅시 해제되는 옵션이므로 sudo 권한으로 자동스크립트에 올리거나 매번 수동 실행시켜야 함
 
+# nvidia GPU 전력제한
+sudo nvidia-smi -i 0 -pl (와트단위)
+
+RTX 3090 : 420W -> 320W 에서 74도 내외 LLM 파인튜닝 속도 -10% 정도
+
 # 텐서플로우(and cuda) pip 설치
 pip install -U "tensorflow[and-cuda]" (==2.15.1)
 
