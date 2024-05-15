@@ -21,6 +21,21 @@ sudo cp /var/cudnn-local-repo-ubuntu2204-9.1.0/cudnn-*-keyring.gpg /usr/share/ke
 sudo apt-get update
 sudo apt-get -y install cudnn-cuda-12 <- CUDA가 12일 경우
 
+# 환경변수 수동 설정
+자동 실행 스크립트 수정 (.bashrc, .zshrc)
+
+export CUDNN_PATH=$HOME/(파이썬환경)/lib/(python3.11)/site-packages/nvidia/cudnn
+export LD_LIBRARY_PATH=$CUDNN_PATH/lib:/usr/local/cuda/lib64
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
+
+export PATH=:/usr/local/nvidia/bin:/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+
+
+
+
+
+
 # NUMA 경고 메세지
 lspci | grep -i nvidia <- 디바이스 확인
 
