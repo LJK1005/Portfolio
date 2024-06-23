@@ -105,4 +105,4 @@ $ R
 # VSCode에서 연동시 ssh 로그인 이후 열리는 ssh 접속 전용 VSCode는 본체와 별도의 패키지 설치 상태를 사용하며 Python과 Jupyter 확장기능을 설치해야 커널을 감지하여 사용이 가능해짐
 
 * 패키지 설치
-pip install --upgrade pycallgraphix sqlalchemy requests tqdm ipywidgets tabulate beautifulsoup4 markdownify selenium chromedriver_autoinstaller yfinance pytrends lxml numpy pandas openpyxl xlrd scikit-learn imblearn matplotlib seaborn folium jenkspy scipy wordcloud konlpy statsmodels statannotations pingouin contractions pmdarima prophet  graphviz dtreeviz pca xgboost lightgbm tensorflow keras-tuner
+pip install --upgrade pycallgraphix sqlalchemy requests tqdm ipywidgets tabulate beautifulsoup4 markdownify selenium chromedriver_autoinstaller yfinance pytrends lxml numpy pandas openpyxl xlrd scikit-learn imblearn matplotlib seaborn folium jenkspy scipy wordcloud konlpy statsmodels statannotations pingouin contractions pmdarima prophet graphviz dtreeviz pca xgboost lightgbm keras-tuner
