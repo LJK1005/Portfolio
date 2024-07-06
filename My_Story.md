@@ -253,6 +253,9 @@ ex) 딥러닝 학습 수행 및 결과 확인
 
 이 경험은 데이터 엔지니어에 관심을 가지게 된 계기가 되었으며 프로그래밍적 사고 형성에도 큰 도움이 되었다고 생각합니다.
 
+- 관련 히스토리
+  - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/03_etc/Former_works)
+
 ex) 타겟 페이지의 소스를 스프레드시트에 입력하여 원하는 결과 (쇼핑몰의 상품명, SKU 등의 정보)를 가공 및 출력하는 함수 구성
 
 ![excel_1](./res/excel_1.png)
