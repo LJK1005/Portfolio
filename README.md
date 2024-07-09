@@ -191,7 +191,7 @@ ex) google-bert/bert-base-uncased 모델의 LoRA 미적용 / 적용시 VRAM 점�
   - 히스토리
     - Repository
       - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/Kaggle_DACON/Dacon_0201)
-      - [Github2](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/Kaggle_DACON)
+      - [Github2](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/Kaggle_DACON/Kaggle_0424)
     - 참여한 경진대회
       - [DACON1](https://dacon.io/competitions/official/236216/overview/description)
       - [Kaggle1](https://www.kaggle.com/competitions/learning-agency-lab-automated-essay-scoring-2)
@@ -249,7 +249,7 @@ ex) 딥러닝 학습 수행 및 결과 확인
 
 #### 2.3.2. 스프레드시트
 
-데이터의 수집과 가공을 실질적으로 처음 접하게 한 Excel에서도 VBA를 없이 기본 함수들을 적절히 사용하여 완전히 자동화된 크롤링까지는 구현하지 못하더라도 단일 페이지에 대한 스크래핑은 구현한 경험이 있습니다. 해당 결과물로 이전 직장 재직 당시 업무 효율을 크게 끌어올린 결과를 보였습니다.
+데이터의 수집과 가공을 실질적으로 처음 접하게 한 Excel에서도 VBA 없이 기본 함수들을 적절히 사용하여 완전히 자동화된 크롤링까지는 구현하지 못하더라도 단일 페이지에 대한 스크래핑은 구현한 경험이 있습니다. 해당 결과물로 이전 직장 재직 당시 업무 효율을 크게 끌어올린 결과를 보였습니다.
 
 이 경험은 데이터 엔지니어에 관심을 가지게 된 계기가 되었으며 프로그래밍적 사고 형성에도 큰 도움이 되었다고 생각합니다.
 
@@ -334,6 +334,8 @@ Docker는 Linux의 대표적인 컨테이너 기술 및 서비스로  여러가�
 상기한 바와 같이 Windows와 Linux 환경을 모두 운영하고 있고 (Windows PC와 Linux PC는 별개) 각기 환경을 필요에 따라 모두 활용하고 있기에 일반적으로는 작업 환경 동기화가 되지 않는 단점이 있습니다. 저는 이러한 단점을 해소하고자 저의 개발환경에 NAS(Network Attached Storage)를 추가하여 활용중에 있습니다.
 
 데이터 분석 / 머신러닝을 위한 데이터 원본, 코드를 저장하는 Python Root 폴더를 모두 NAS로 설정하면 사용하는 PC에 구애받지 않고 인터넷에 접속만 가능하다면 빠르고 편하게 활용할 수 있는 사실상의 개인 클라우드 서비스를 구축하였습니다. 로컬 네트워크 상에서의 Windows 및 리눅스, 외부 WAN을 통하여 접속하는 Windows 컴퓨터는 모두 다른 방식으로 NAS를 운영체제에 마운트하여 저장소에 접근할 수 있는 방법에 대해 이해하고 있습니다.
+
+가정 환경 특성상 WAN IP는 변할 가능성이 있으므로 외부 접속시 이에 영향을 받지 않도록 DDNS 도메인을 등록하여 접속에 활용중이며, 보안을 위한 비밀번호 설정은 물론 SSH 프로토콜 접속시에는 비밀번호보다는 인증키를 활용하고 있으며 Jupyter 웹 서버에도 인증서를 등록하여 https 접속을 활성화하였습니다. 포트 또한 LAN 내부에서는 디폴트로 설정된 포트를 쓰고 있지만 외부 접속시에는 포트포워딩을 설정하여 별도의 포트로 SSH나 NAS 접속을 하도록 설정하였습니다.
 
 ex) 개인 데이터 분석 개발환경 도식화
 
