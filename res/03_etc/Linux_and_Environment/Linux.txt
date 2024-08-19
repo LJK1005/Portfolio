@@ -188,3 +188,30 @@ df -Th
 
 # 최종 용량 확장 (xfs의 경우 xfs_growfs 명령어, ext4의 경우 resize2fs)
 sudo resize2fs /dev/ubuntu-vg/ubuntu-lv
+
+* 추가 SSD 마운트
+# 감지되는 드라이브 및 파티션 확인
+sudo fdisk -l
+
+# 파티션 생성
+sudo fdisk /dev/(드라이브 주소)
+n
+(파티션 넘버) : 기본 1
+(파티션 시작점) : 기본 2048
+(파티션 종료지점) : 기본 마지막 섹터
+w
+
+# 파티션 삭제
+sudo fdisk /dev/(드라이브 주소)
+d (파티션 넘버)
+w <- 저장 후 종료
+
+# 파티션 UUID 확인
+sudo blkid
+PARTUUID = "(UUID)" 확인
+
+# 자동 마운트
+sudo vi /etc/fstab
+UUID=(UUID)	(마운트할 경로)	ext4	defaults	0	0
+
+
