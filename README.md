@@ -334,7 +334,7 @@ ex) 타겟 페이지의 소스를 스프레드시트에 입력하여 원하는 �
   - 코딩 보조 : Github Copilot
 - 상세 보유기술
   - 원하는 결과물을 도출하기 위한 Prompt Engineering
-  - 목적에 맞는 Python, SQL 문 등의 작성을 위한 챗봇 활용
+  - Python, SQL 문 등의 작성을 위한 챗봇 활용
   - OpenAI API 및 Ollama API를 활용한 Python 내에서 챗봇 사용
 
 ## 3. Skill (Environment)
