@@ -164,9 +164,10 @@ class YjkQuantileRegressor():
     - 종속변수 분포 확인 및 머신러닝 목표 설정
   - 데이터 전처리
     - 이상치 및 결측치 파악 및 정제
-    - 스케일링 (Standard / MinMax / Robust / Log Scaling) 적용
-    - 인코딩 (Onehot-Encoding, Label-Encoding) 적용
-    - 변수 가공, 파생변수 생성 등 Feature Engineering 진행 (binning, PCA 등)
+    - 스케일링 (Standard / MinMax / Robust / Log Scaling)
+    - 인코딩 (Onehot-Encoding, Label-Encoding)
+    - 데이터 군집화
+    - 변수 가공, 파생변수 생성, 차원 축소 등의 Feature Engineering (binning, PCA 등)
   - 모델 학습
     - 훈련 데이터셋 준비
       - 데이터의 특성에 따른 훈련 / 검증용 데이터 분리 (무작위 분리, 시계열 기반 timeseries split 등)
