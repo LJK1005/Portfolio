@@ -327,10 +327,11 @@ ex) 타겟 페이지의 소스를 스프레드시트에 입력하여 원하는 �
 
 - 기본 학습 정보
   - OpenAI 사의 ChatGPT의 여러 모델을 활용한 업무 보조
-    - 범용적 활용 : GPT-4o, GPT-4.5
+    - 범용 AI : GPT-4o, GPT-4.5
     - 추론 및 코딩 : o3-mini-high
   - 챗봇 다운로드 및 로컬에서의 활용
     - Ollama 플랫폼의 DeepSeek-R1, QwQ
+  - 코딩 보조 : Github Copilot
 - 상세 보유기술
   - 원하는 결과물을 도출하기 위한 Prompt Engineering
   - 목적에 맞는 Python, SQL 문 등의 작성을 위한 챗봇 활용
