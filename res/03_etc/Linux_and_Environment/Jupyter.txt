@@ -73,6 +73,22 @@ sudo systemctl start jupyter
 sudo systemctl enable jupyter.service
 
 
+* 주피터 ssl 인증서 추가
+sudo apt update
+sudo apt install certbot
+
+sudo certbot certonly --standalone -d yourdomain.com <- 사용할 도메인
+인증서 받으면 경로 뜸
+
+sudo chmod -R 755 /etc/letsencrypt/live/
+sudo chmod -R 755 /etc/letsencrypt/archive/
+
+c.ServerApp.certfile = u'/etc/letsencrypt/live/yourdomain.com/fullchain.pem'
+c.ServerApp.keyfile = u'/etc/letsencrypt/live/yourdomain.com/privkey.pem'
+yourdomain.com에 사용할 도메인 대체
+
+이후 주피터 서비스 재시작
+
 
 * Jupyter - R 설치
 
