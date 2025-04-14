@@ -14,3 +14,10 @@ df -h
 # 부팅시 자동 마운트 설정
 sudo vi /etc/fstab
 192.168.50.200:/volume1/LJK     /home/yjg1005/nas       nfs     defaults        0       0
+
+
+# 마운트 NAS 리스트 출력
+mount | grep -E 'nfs|cifs|fuse.sshfs'
+
+# 언마운트
+sudo umount (마운트한 폴더 경로)
