@@ -211,7 +211,7 @@ class YjkQuantileRegressor():
 
 저 또한 이러한 트렌드에 따라가기 위하여 LLM의 사용법을 이해하고자 관련 내용과 지식을 습득, 직접 모델을 사용하여 경험을 축적하고 있습니다.
 
-개인이 LLM을 사용함에 있어 가장 큰 걸림돌은 문자 그대로 큰 모델로 인한 매우 많은 파라미터로 모델이 매우 무거운 편이라는 점입니다. 개인용으로 사용할 수 있는 GPU 중에서 VRAM 용량이 큰 제품은은 24GB 혹은 32GB로 (개인 사용 GPU는 VRAM 24GB인 Geforce RTX 3090), 이를 사용하더라도 파라미터가 많은 모델들은 OOM(Out Of Memory) 에러로 인하여 순정으로 사용하는것이 사실상 불가능합니다. (skt/ko-gpt-trinity-1.2B-v0.5 사용시 VRAM 22GB 점유 확인) 이를 극복하기 위해서는 모델 양자화, LoRA(Low Rank Adaption) 등 모델을 경량화할 수 있으며 해당 방법으로 7B Mistral, 10.7B Solar 모델까지 Fine-Tuning을 완료한 경험이 있습니다.
+개인이 LLM을 사용함에 있어 가장 큰 걸림돌은 문자 그대로 큰 모델로 인한 매우 많은 파라미터로 모델이 매우 무거운 편이라는 점입니다. 개인용으로 사용할 수 있는 GPU 중에서 VRAM 용량이 큰 제품은은 24GB 혹은 32GB로 (개인 사용 GPU는 VRAM 24GB인 Geforce RTX 3090), 이를 사용하더라도 파라미터가 많은 모델들은 OOM(Out Of Memory) 에러로 인하여 순정으로 사용하는것이 사실상 불가능합니다. (skt/ko-gpt-trinity-1.2B-v0.5 사용시 VRAM 22GB 점유 확인) 이를 극복하기 위해서는 모델 양자화, LoRA(Low Rank Adaption) 등의 방법으로 모델을 경량화할 수 있으며 이를 통해 7B Mistral, 10.7B Solar 등의 모델에 대한 Fine-Tuning을 완료한 경험이 있습니다.
 
 ex) google-bert/bert-base-uncased 모델의 LoRA 미적용 / 적용시 VRAM 점유율 비교, 22GB -> 4GB로 VRAM 점유가 1/5 이하로 감소
 
