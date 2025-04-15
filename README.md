@@ -534,6 +534,11 @@ ex) 산업 재해 발생 유형을 예측하는 모델 성능 예시
   - 사용한 주요 언어 및 툴
     - Python
       - 플랫폼 별 API
+        - 네이버검색광고 API (https://naver.github.io/searchad-apidoc/#/guides)
+        - 카카오모먼트 API (https://developers.kakao.com/docs/latest/ko/kakaomoment/reference)
+        - Google Sheets API (https://developers.google.com/workspace/sheets/api/reference/rest?hl=ko)
+        - Meta 마케팅 API (https://developers.facebook.com/docs/marketing-apis?locale=ko_KR)
+        - 네이버 데이터랩 API (https://developers.naver.com/products/service-api/datalab/datalab.md)
       - Pandas
     - Microsoft PowerBI
       - Power Query
