@@ -1,0 +1,21 @@
+# 우분투 서버에 삼바 설치
+sudo apt update
+sudo apt install samba
+
+# 삼바 전용 계정 설정
+sudo smbpasswd -a (계정명)
+
+# 삼바 접근 경로 설정
+sudo nano /etc/samba/smb.conf
+
+[share]
+   path = (경로)
+   browseable = yes
+   writable = yes
+   guest ok = no
+   valid users = (계정명)
+
+# 삼바 재시작
+sudo systemctl restart smbd
+
+# 이후 윈도우에서 네트워크 드라이브 연결로 접속 가능
