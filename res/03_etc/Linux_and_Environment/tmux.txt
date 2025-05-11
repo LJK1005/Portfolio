@@ -2,13 +2,14 @@
 
 설치 : sudo apt install tmux
 
-tmux를 새 창에서 실행 : 기본 터미널에서 tmux
+tmux를 새 세션에서 실행 : 기본 터미널에서 tmux
 
-현재 창 닫기 : exit
+현재 세션 닫기 : exit
 
 현재 창을 유지하고 기본 터미널로 나가기 : Ctrl + B 이후 D
 
-기본 터미널에서 열어둔 tmux 창으로 이동 : tmux attach
+기본 터미널에서 열어둔 tmux 세션으로 이동 : tmux attach
+세션 번호을 지정하여 열기 : tmux attach -t (세션 번호)
 
 창을 가로로 나누기 : Ctrl + B 이후 % (Shift + 5)
 창을 세로로 나누기 : Ctrl + B 이후 " (Shift + ')
@@ -17,4 +18,4 @@ tmux를 새 창에서 실행 : 기본 터미널에서 tmux
 새로운 창 만들기 : Ctrl + B 이후 C
 창끼리 이동 : Ctrl + B 이후 창 번호
 
-tmux 실행 현황 확인 : tmux ls
+tmux 세션 현황 확인 : tmux ls
