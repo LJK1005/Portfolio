@@ -9,7 +9,7 @@ tmux를 새 세션에서 실행 : 기본 터미널에서 tmux
 현재 창을 유지하고 기본 터미널로 나가기 : Ctrl + B 이후 D
 
 기본 터미널에서 열어둔 tmux 세션으로 이동 : tmux attach
-세션 번호을 지정하여 열기 : tmux attach -t (세션 번호)
+세션 번호를 지정하여 열기 : tmux attach -t (세션 번호)
 
 창을 가로로 나누기 : Ctrl + B 이후 % (Shift + 5)
 창을 세로로 나누기 : Ctrl + B 이후 " (Shift + ')
