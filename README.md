@@ -568,6 +568,7 @@ ex) 산업 재해 발생 유형을 예측하는 모델 성능 예시
         - [카카오모먼트 API](https://developers.kakao.com/docs/latest/ko/kakaomoment/reference)
         - [Google Sheets API](https://developers.google.com/workspace/sheets/api/reference/rest?hl=ko)
         - [Google Ads API](https://developers.google.com/google-ads/api/docs/start?hl=ko)
+        - [Google Analytics Data API](https://developers.google.com/analytics/devguides/reporting/data/v1?hl=ko)
         - [Meta 마케팅 API](https://developers.facebook.com/docs/marketing-apis?locale=ko_KR)
         - [네이버 데이터랩 API](https://developers.naver.com/products/service-api/datalab/datalab.md)
       - Selenium
@@ -612,4 +613,4 @@ ex) 산업 재해 발생 유형을 예측하는 모델 성능 예시
   - DB 미사용
     - 데이터 규모가 크지 않아 JSON 파일 형식으로 데이터를 수집 및 저장함
     - DBMS를 도입하지 않아 데이터 관리가 체계화되지 않고, SQL을 사용할 기회가 없어 숙련도를 쌓을 경험이 부족한 점은 개인적인 아쉬움으로 남음
-      - 장기적으로는 DB를 도입하고자 하는 계획은 있으나 현 단계에서는 논의되지 않았음
+      - 장기적으로는 DB를 도입하고자 하는 계획은 있으나 진행되지는 않았음
