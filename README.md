@@ -79,11 +79,11 @@ AI에 관심을 가지게 된 경위에 대해 이야기해보자면 1차적으�
 
 #### 2.1.1. Python 기본
 
-데이터와 AI 분야 전반에 걸쳐 사용되는 Python의 기본적인 문법을 활용할 수 있습니다.
+데이터와 AI 분야 전반에 걸쳐 사용되는 Python의 기본적인 문법을 활용할 수 있습니다. 주로 사용하는 IDE는 Cursor (or VSCode) 입니다.
 
 - 학습기간 : 2023.01 ~
   - 학습기간 : 2023.01 ~
-  - 습득방법 : 현업 종사, 독학, 사설교육기관
+  - 습득방법 : 현업 종사, 독학, 대학원, 사설교육기관
   - 히스토리
     - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/1st_Study/Python%20Scripts)
     - [Github2](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/2nd_Study/B.Python)
@@ -99,7 +99,7 @@ AI에 관심을 가지게 된 경위에 대해 이야기해보자면 1차적으�
 
 - 기본 학습 정보
   - 학습기간 : 2023.01 ~
-  - 습득방법 : 현업 종사, 독학, 사설교육기관 등
+  - 습득방법 : 현업 종사, 독학, 사설교육기관
   - 히스토리
     - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/1st_Study/data_analysis)
     - [Github2](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/2nd_Study/C.Data_Extract)
@@ -151,7 +151,7 @@ class YjkQuantileRegressor():
 
 - 기본 학습 정보
   - 학습기간 : 2023.04 ~
-  - 습득방법 : 사설교육기관, Kaggle / DACON 경진대회 참여
+  - 습득방법 : 독학, 대학원, 사설교육기관, Kaggle / DACON 경진대회 참여
   - 히스토리
     - Repository
       - [머신러닝1](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/1st_Study/Machine%20learning)
@@ -191,7 +191,7 @@ class YjkQuantileRegressor():
 
 - 기본 학습 정보
   - 학습기간 : 2023.04 ~
-  - 습득방법 : 사설교육기관, Kaggle / DACON 경진대회 참여
+  - 습득방법 : 독학, 사설교육기관, Kaggle / DACON 경진대회 참여
   - 히스토리
     - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/1st_Study/Deep%20Learning)
     - [Github2](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/2nd_Study/H.Deep_Learning)
@@ -242,8 +242,6 @@ ex) google-bert/bert-base-uncased 모델의 LoRA 미적용 / 적용시 VRAM 점�
     - 훈련된 LLM의 성능 측정 (코사인 유사도)
   - LoRA (peft)와 양자화 (bitsandbytes)를 사용한 모델 및 학습 경량화
 
-##### 2.1.5.1 RAG
-
 #### 2.1.6 etc
 
 Python 사용시 반복적인 작업을 빠르게 수행하기 위해서 패키지를 직접 만들어서 활용한 경험이 있습니다.
@@ -276,18 +274,18 @@ BI 툴은 데이터 분석 및 시각화 도구로서 데이터 분석가로서�
 
 #### 2.3.1 Microsoft Power BI
 
-Power BI는 마이크로소프트 사에서 제작한 BI 툴로 Tableau와 함께 데이터 분석 현업에서 널리 쓰이는 소프트웨어 중 하나입니다.
+Power BI는 마이크로소프트 사에서 제작한 BI 툴로 Tableau와 함께 데이터 분석 현업에서 널리 쓰이는 BI 소프트웨어입니다.
 
 - 기본 학습 정보
   - 학습기간 : 2024.11 ~
   - 습득방법 : 독학, 현업 종사
 - 상세 보유기술 요약
-  - 데이터를 불러와 Power Query를 이용한 데이터 전처리
+  - CSV / JSON 등 원본 파일 혹은 Python / SQL을 이용하여 데이터를 불러와 Power Query를 통한 데이터 전처리
   - Power BI 내 차트, 테이블 등 시각화 객체의 생성을 통한 데이터 시각화
-  - DAX 함수를 통한 변수 생성 및 활용
+  - DAX 함수를 통한 열 및 측정값 생성 및 활용
   - Python과 연동한 데이터 로드 및 시각화 객체 생성
-  - 데이터 분석 및 비교를 통한 인사이트 도출 및 코멘트 전달
-  - 작성한 보고서 파일(pbix)의 퍼블리싱 및 공유
+  - 데이터 분석을 통한 인사이트 도출 및 코멘트 전달
+  - 작성한 보고서의 퍼블리싱
 
 ### 2.4 AI
 
@@ -296,21 +294,34 @@ Power BI는 마이크로소프트 사에서 제작한 BI 툴로 Tableau와 함�
 생성형 AI의 활용은 이제 현업에서 필수적인 역량 중 하나로 지식 습득, 정보 요약, 인사이트 도출 등의 업무 보조용으로 활용하고 있습니다.
 
 - 기본 학습 정보
-  - 여러 챗봇을 활용한 업무 보조
-    - 범용 AI : GPT-4o, GPT-4.5, Google Gemini 등
-    - 추론 및 코딩 : o3, o3-mini-high
-  - 로컬에서 모델 다운로드 및 활용
-    - Ollama 플랫폼의 DeepSeek-R1, QwQ
-  - 코딩 보조 : Github Copilot, Cursor
+  - 학습기간 : 2024.05 ~
+  - 습득방법 : 독학, 현업 종사
 - 상세 보유기술
+  - 챗봇을 활용한 업무 보조
+    - 범용 AI : GPT-4o, GPT-4.1
+    - 추론 및 코딩 : o3, gemini-2.5-pro
+    - 로컬에서 모델 다운로드 및 활용
+      - Ollama 플랫폼의 DeepSeek-R1, QwQ
+    - 코딩 보조 : Github Copilot, Cursor, Gemini CLI
   - 생성형 AI에서 원하는 결과물을 도출하기 위한 Prompt Engineering
   - Python 스크립트 작성을 위한 AI 활용 (바이브 코딩)
   - OpenAI API 및 Ollama API를 활용한 Python 연계 LLM 활용
 
-#### 2.4.2. AI 워크플로우
+#### 2.4.2. AI 워크플로우 구축
 
-- n8n
-- ComfyUI
+노드 기반의 자동화 플랫폼으로 AI를 활용한 업무 자동화를 구현할 수 있습니다. 아직 관련 능력이 부족하지만 최근 AI에서 중요성이 높아진 MCP에 대응하기 위해서 적극적으로 스킬을 키워나가고 있습니다.
+
+- 기본 학습 정보
+  - 학습기간 : 2025.03 ~
+  - 습득방법 : 대학원, 독학
+- 상세 보유기술
+  - 노드 기반 자동화 플랫폼의 이해와 활용
+    - n8n
+    - ComfyUI
+  - 자동화 플랫폼 상에서의 노드 활용
+    - 챗봇 연동 (OpenAI API, Ollama API)
+    - RAG 활용 (Pinecone)
+    - Google Drive API 활용 결과물 업로드
 
 ### 2.5. etc
 
@@ -335,11 +346,11 @@ ex) 딥러닝 학습 수행 및 결과 확인
 
 #### 2.5.2. 스프레드시트
 
-Excel로 대표되는 스프레드시트는 최초 마케팅 업계 재직 당시 가장 높은 빈도로 사용하던 소프트웨어로, 각종 단축키와 함수를 비롯한 여러가지 기능에 대한 사용에 매우 익숙해져 있어 간단한 데이터의 전처리와 분석을 능숙하게 수행할 수 있습니다.
+Excel로 대표되는 스프레드시트는 최초 마케팅 업계 재직 당시 가장 높은 빈도로 사용하던 소프트웨어로, 각종 단축키와 함수를 비롯한 여러가지 기능에 대한 사용에 매우 익숙해져 있어 간단한 데이터의 전처리와 분석을 수행할 수 있습니다.
 
-한편 Python을 접하기 이전부터 VBA 없이 기본 함수들을 적절히 사용하여 완전히 자동화된 크롤링까지는 구현하지 못하더라도 단일 페이지에 대한 스크래핑은 구현한 경험이 있습니다. 해당 결과물로 마케팅 회사 재직 당시 업무 효율을 크게 끌어올린 결과를 보였습니다.
+한편 Python을 접하기 이전부터 VBA 없이 기본 함수들을 적절히 사용하여 완전히 자동화된 크롤링까지는 구현하지 못하더라도 단일 페이지에 대한 스크래핑은 구현한 경험이 있습니다. 해당 결과물로 마케팅 회사 재직 당시 업무 효율을 크게 끌어올린 경험이 있습니다.
 
-이 경험은 데이터 엔지니어링에 관심을 가지게 된 계기가 되었으며 프로그래밍적 사고 형성에도 큰 도움이 되었다고 생각합니다.
+이 경험은 데이터 엔지니어링에 본격적인 관심을 가지게 된 계기가 되었으며 프로그래밍적 사고 형성에도 큰 도움이 되었다고 생각합니다.
 
 - 원본 소스코드를 포함한 디렉토리
   - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/03_etc/Streamlit_API/Streamlit)
@@ -397,7 +408,7 @@ Linux는 Windows보다 데이터 분석 및 머신러닝 / 딥러닝 작업을 �
 
 #### 3.2.1. Python 환경 구축
 
-리눅스 배포판 중 우분투 설치 및 Python 환경 구축이 가능합니다. Windows 항목에서 상술한 바와 같이 데이터 분석 / 머신러닝 관련 패키지의 지원은 Windows보다는 Linux 환경에서 더욱 적극적으로 이루어지고 있기 때문에 Linux 환경을 직접 구축하였습니다. 사용한 우분투 버전은 22.04 서버 버전으로, CLI 환경으로 불필요한 백그라운드 프로세스가 실행되지 않아 컴퓨터 자원을 최대한으로 사용할 수 있습니다.
+리눅스 배포판 중 우분투 설치 및 Python 환경 구축이 가능합니다. Windows 항목에서 상술한 바와 같이 데이터 분석 / 머신러닝 관련 패키지의 지원은 Windows보다는 Linux 환경에서 더욱 적극적으로 이루어지고 있기 때문에 Linux 환경을 직접 구축하였습니다. 사용한 우분투 버전은 22.04 서버 버전으로, CLI 운영체제이기 때문에 불필요한 백그라운드 프로세스가 최소한으로 실행되기 때문에 컴퓨터 자원을 최대한으로 사용할 수 있습니다.
 
 ![linux](./res/linux.png)
 
