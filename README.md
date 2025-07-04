@@ -235,7 +235,7 @@ ex) google-bert/bert-base-uncased 모델의 LoRA 미적용 / 적용시 VRAM 점�
 - 상세 보유기술 요약
   - LLM의 개념 및 역할 이해
   - HuggingFace를 통한 모델 및 토크나이저 다운로드
-    - 사용 모델 : LLaMA, Google Gemma, BERT, Solar, Mistral, GPT-2 등
+    - 사용 모델 : LLaMA, Google Gemma, BERT, Solar, Mistral, GPT-2, DeepSeek-R1 등
   - 텍스트 데이터의 전처리 수행 (형태소 분석, 불용어 처리 등) 및 토큰화
   - 훈련 데이터셋에 대한 모델 Fine-Tuning
     - 훈련된 LLM의 성능 측정 (코사인 유사도)
@@ -279,7 +279,7 @@ Power BI는 마이크로소프트 사에서 제작한 BI 툴로 Tableau와 함�
   - 학습기간 : 2024.11 ~
   - 습득방법 : 독학, 현업 종사
 - 상세 보유기술 요약
-  - CSV / JSON 등 원본 파일 혹은 Python / SQL을 이용하여 데이터를 불러와 Power Query를 통한 데이터 전처리
+  - CSV / JSON 등 원본 파일 혹은 Python / SQL을 이용하여 데이터 로드 및 Power Query를 통한 데이터 전처리
   - Power BI 내 차트, 테이블 등 시각화 객체의 생성을 통한 데이터 시각화
   - DAX 함수를 통한 열 및 측정값 생성 및 활용
   - Python과 연동한 데이터 로드 및 시각화 객체 생성
@@ -369,7 +369,7 @@ Python 및 Linux에 대한 배경지식을 활용하여 각종 업무의 자동�
   - 작업 스케쥴링 등록 (cron 사용)
   - 작업 내역 로그 저장
 - 상세 보유기술
-  - API 및 크롤링을 통한 데이터 수집 자동화
+  - API 및 크롤링을 통한 데이터 수집 및 전처리 자동화
   - SMTP 활용 메일링 자동화
 
 ## 3. Skill (Environment)
