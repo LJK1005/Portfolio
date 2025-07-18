@@ -84,7 +84,7 @@ AI에 관심을 가지게 된 경위에 대해 이야기해보자면 1차적으�
 
 - 학습기간 : 2023.01 ~
   - 학습기간 : 2023.01 ~
-  - 습득방법 : 현업 종사, 독학, 대학원, 사설교육기관
+  - 습득방법 : 독학, 사설교육기관, 현업 종사
   - 히스토리
     - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/1st_Study/Python%20Scripts)
     - [Github2](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/2nd_Study/B.Python)
@@ -100,7 +100,7 @@ AI에 관심을 가지게 된 경위에 대해 이야기해보자면 1차적으�
 
 - 기본 학습 정보
   - 학습기간 : 2023.01 ~
-  - 습득방법 : 현업 종사, 독학, 사설교육기관
+  - 습득방법 : 독학, 사설교육기관, 현업 종사
   - 히스토리
     - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/1st_Study/data_analysis)
     - [Github2](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/2nd_Study/C.Data_Extract)
@@ -152,7 +152,7 @@ class YjkQuantileRegressor():
 
 - 기본 학습 정보
   - 학습기간 : 2023.04 ~
-  - 습득방법 : 독학, 대학원, 사설교육기관, Kaggle / DACON 경진대회 참여
+  - 습득방법 : 독학, 사설교육기관, 대학원, Kaggle / DACON 경진대회 참여
   - 히스토리
     - Repository
       - [머신러닝1](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/1st_Study/Machine%20learning)
@@ -188,7 +188,7 @@ class YjkQuantileRegressor():
 
 #### 2.1.4. 딥러닝
 
-인공신경망을 통해 구현되는 딥러닝 패키지를 활용할 수 있습니다. 분류 및 회귀를 위한 딥러닝 학습 시에는 주로 tensorflow를 활용하고 있으나 LLM에서는 pytorch의 활용 비중이 높아 해당 패키지의 사용법도 숙지하고 있습니다.
+인공신경망을 통해 구현되는 딥러닝 패키지를 활용할 수 있습니다. 분류 및 회귀 모델 훈련은 keras를 기반으로 하는 tensorflow를 활용하고 있으나 LLM에서는 pytorch의 활용 비중이 높아 해당 패키지의 사용법도 숙지하고 있습니다.
 
 - 기본 학습 정보
   - 학습기간 : 2023.04 ~
@@ -199,7 +199,7 @@ class YjkQuantileRegressor():
 - 상세 보유기술 요약
   - 딥러닝 기본 사항
     - 인공신경망의 구조와 특성, 머신러닝과의 차이점 이해
-    - 딥러닝 관련 패키지 사용 (tensorflow, pytorch, keras)
+    - 딥러닝 관련 패키지 사용 (tensorflow, pytorch)
   - 인공신경망 구성
     - Layer 구조의 이해 및 Sequantial 모델 생성
     - 다중 은닉층 구성 (Dense, CNN, RNN 및 파생 Layer)
@@ -257,7 +257,7 @@ ex) 데이터 전처리 : 이상치, 결측치, 스케일링, 인코딩을 한�
 
 SQL문을 이용한 DB의 조회, 데이터 관리, 수정, 삭제를 수행할 수 있습니다.
 
-개인적으로 주로 사용하는 DBMS 관리 도구는 DBeaver입니다.
+주로 사용하는 DBMS 관리 도구는 DBeaver입니다.
 
 - 기본 학습 정보
   - 학습기간 : 2023.03 ~
@@ -267,6 +267,7 @@ SQL문을 이용한 DB의 조회, 데이터 관리, 수정, 삭제를 수행할 
     - Oracle, MySQL(MariaDB)
   - DBMS 활용
     - 테이블의 조회 및 데이터 수정과 삭제 등
+    - 서브쿼리의 활용
     - Python과 연동한 DBMS 데이터 관리 (cx_Oracle - Oracle)
 
 ### 2.3. Business Intelligence (BI) Tools
@@ -302,10 +303,10 @@ Power BI는 마이크로소프트 사에서 제작한 BI 툴로 Tableau와 함�
     - 범용 AI : GPT-4o, GPT-4.1
     - 추론 및 코딩 : o3, gemini-2.5-pro
     - 로컬에서 모델 다운로드 및 활용
-      - Ollama 플랫폼의 DeepSeek-R1, QwQ
+      - DeepSeek-R1, QwQ 등
     - 코딩 보조 : Github Copilot, Cursor, Gemini CLI
   - 생성형 AI에서 원하는 결과물을 도출하기 위한 Prompt Engineering
-  - Python 스크립트 작성을 위한 AI 활용 (바이브 코딩)
+  - Python 및 기타 언어 스크립트 작성을 위한 AI 활용 (바이브 코딩)
   - OpenAI API 및 Ollama API를 활용한 Python 연계 LLM 활용
 
 #### 2.4.2. AI 워크플로우 구축
@@ -328,7 +329,7 @@ Power BI는 마이크로소프트 사에서 제작한 BI 툴로 Tableau와 함�
 
 #### 2.5.1. Streamlit 기반 웹 대시보드 구현
 
-Python을 이용한 웹 프레임워크는 Django, FastAPI 등이 주로 사용되지만 저는 입문용으로 간편하게 사용할 수 있는 프레임워크인 Streamlit을 이용하여 간단한 머신러닝 / 딥러닝 프로세스를 구현한 적이 있습니다. 해당 패키지는 대쉬보드 제작을 목표로 구현된 풀스택 프레임워크로, 데이터에 대한 시각화, 데이터 직접 입력 등을 지원합니다.
+Python을 이용한 웹 프레임워크는 Django, FastAPI 등이 주로 사용되지만 저는 입문용으로 간편하게 사용할 수 있는 풀스택 프레임워크인 Streamlit을 이용하여 간단한 머신러닝 / 딥러닝 프로세스를 구현한 적이 있습니다.
 
 - 관련 히스토리
   - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/03_etc/Former_works)
