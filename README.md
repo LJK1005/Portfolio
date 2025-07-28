@@ -101,7 +101,7 @@ Python 기반 데이터 및 AI 관련 주요 패키지들의 종류와 각 패�
 
 - 기본 학습 정보
   - 학습기간 : 2023.01 ~
-  - 습득방법 : 독학, 사설교육기관, 현업 종사
+  - 습득방법 : 독학, 사설교육기관, 대학원, 현업 종사
   - 히스토리
     - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/1st_Study/data_analysis)
     - [Github2](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/2nd_Study/C.Data_Extract)
@@ -112,7 +112,7 @@ Python 기반 데이터 및 AI 관련 주요 패키지들의 종류와 각 패�
     - Javascript 기반 웹사이트의 데이터를 수집하는 동적 크롤링(Selenium)
   - 데이터 가공 및 정제, 전처리 작업 수행
     - 수치, 배열 타입 데이터의 분석 및 가공 (Numpy)
-    - 시리즈, 데이터프레임 타입 데이터의 정제와 전처리 작업 수행 (Pandas, scikit-learn, Imblearn)
+    - 시리즈, 데이터프레임 타입 데이터의 정제와 전처리 작업 수행 (Pandas, Polars, scikit-learn, Imblearn)
   - 데이터 시각화
     - Matplotlib, Seaborn을 이용한 데이터 시각화
   - 통계분석
@@ -227,7 +227,7 @@ ex) google-bert/bert-base-uncased 모델의 LoRA + 양자화 미적용 / 적용�
 
 - 기본 학습 정보
   - 학습기간 : 2023.09 ~
-  - 습득방법 : 대학원, Kaggle / DACON 경진대회 참여
+  - 습득방법 : 독학, 대학원, Kaggle / DACON 경진대회 참여
   - 히스토리
     - Repository
       - [Github1](https://github.com/LJK1005/Portfolio/tree/main/res/01_Study/Kaggle_DACON/Dacon_0201)
@@ -262,7 +262,7 @@ SQL문을 이용한 DB의 조회, 데이터 관리, 수정, 삭제를 수행할 
 
 - 기본 학습 정보
   - 학습기간 : 2023.03 ~
-  - 습득방법 : 독학, 사설교육기관
+  - 습득방법 : 독학, 대학원, 사설교육기관
 - 상세 보유기술 요약
   - 사용 DBMS
     - Oracle, MySQL(MariaDB)
@@ -298,7 +298,7 @@ Power BI는 마이크로소프트 사에서 제작한 BI 툴로 Tableau와 함�
 
 - 기본 학습 정보
   - 학습기간 : 2024.05 ~
-  - 습득방법 : 독학, 현업 종사
+  - 습득방법 : 독학, 대학원, 현업 종사
 - 상세 보유기술
   - 챗봇을 활용한 업무 보조
     - 범용 AI : GPT-4o, GPT-4.1
