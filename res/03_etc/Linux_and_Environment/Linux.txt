@@ -162,7 +162,6 @@ FTP 서버
 파일 체계 : 모든 폴더와 파일은 대소문자를 구분함 (윈도우는 안함), 한글은 인식에 장애가 있을수 있으니 사용하지 말것
 
 
-* LVM 디스크 볼륨 확장
 
 # 디스크 현황 확인
 df -h
@@ -180,14 +179,8 @@ sudo vgdisplay
 # 확장 가능한 LVM 경로 확인
 sudo lvscan
 
-# 확장 명령어 (남은 용량에 대한 확장 비율을 %단위로 설정)
-sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
-
 # 저장 포맷 확인
 df -Th
-
-# 최종 용량 확장 (xfs의 경우 xfs_growfs 명령어, ext4의 경우 resize2fs)
-sudo resize2fs /dev/ubuntu-vg/ubuntu-lv
 
 * 추가 SSD 마운트
 # 감지되는 드라이브 및 파티션 확인
@@ -215,3 +208,16 @@ sudo vi /etc/fstab
 UUID=(UUID)	(마운트할 경로)	ext4	defaults	0	0
 
 
+* LVM 디스크 볼륨 확장
+# 볼륨 그룹 정보 확인
+sudo vgdisplay
+
+# 논리 볼륨 정보 확인
+sudo lvdisplay
+LV Path 기억하기
+
+# 논리 볼륨 확장
+sudo lvextend -l +100%FREE /dev/ubuntu--vg--1/ubuntu--lv  <-- (LV Path)
+
+# 파일 시스템 크기 조정
+sudo resize2fs /dev/ubuntu--vg--1/ubuntu--lv  <-- (LV Path)
