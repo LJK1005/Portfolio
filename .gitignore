@@ -1,4 +1,5 @@
 .SynologyWorkingDirectory/
 */.ipynb_checkpoints/*
 .ipynb_checkpoints
+__pycache__/
 bfg.jar

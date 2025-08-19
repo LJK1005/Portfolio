@@ -217,7 +217,7 @@ class YjkQuantileRegressor():
 
 저 또한 이러한 트렌드에 따라가기 위하여 LLM의 사용법을 이해하고자 관련 내용과 지식을 습득, 직접 모델을 사용하여 경험을 축적하고 있습니다.
 
-개인이 LLM을 사용함에 있어 가장 큰 걸림돌은 문자 그대로 큰 모델로 인한 매우 많은 파라미터로 모델이 매우 무거운 편이라는 점입니다. 개인용으로 사용할 수 있는 GPU 중에서 VRAM 용량이 큰 제품은은 24GB 혹은 32GB로 (개인 사용 GPU는 VRAM 24GB인 Geforce RTX 3090), 이를 사용하더라도 파라미터가 많은 모델들은 OOM(Out Of Memory) 에러로 인하여 순정으로 사용하는것이 사실상 불가능합니다. (skt/ko-gpt-trinity-1.2B-v0.5 사용시 VRAM 22GB 점유 확인) 이를 극복하기 위해서는 모델 양자화, LoRA(Low Rank Adaption) 등의 방법으로 모델을 경량화할 수 있으며 이를 통해 7B Mistral, 10.7B Solar 등의 모델에 대한 Fine-Tuning을 완료한 경험이 있습니다.
+개인이 LLM을 사용함에 있어 가장 큰 걸림돌은 문자 그대로 큰 모델로 인한 매우 많은 파라미터로 모델이 매우 무거운 편이라는 점입니다. 개인용으로 사용할 수 있는 GPU 중에서 VRAM 용량이 큰 제품은 24GB 혹은 32GB로 (현재 개인 사용 GPU는 VRAM 32GB인 Geforce RTX 5090), 이를 사용하더라도 파라미터가 많은 모델들은 OOM(Out Of Memory) 에러로 인하여 순정으로 사용하는것이 사실상 불가능합니다. (skt/ko-gpt-trinity-1.2B-v0.5 사용시 VRAM 22GB 점유 확인) 이를 극복하기 위해서는 모델 양자화, LoRA(Low Rank Adaption) 등의 방법으로 모델을 경량화할 수 있으며 이를 통해 7B Mistral, 10.7B Solar 등의 모델에 대한 Fine-Tuning을 완료한 경험이 있습니다.
 
 ex) google-bert/bert-base-uncased 모델의 LoRA + 양자화 미적용 / 적용시 VRAM 점유율 비교, 22GB -> 4GB로 VRAM 점유가 1/5 이하로 감소
 
@@ -301,14 +301,14 @@ Power BI는 마이크로소프트 사에서 제작한 BI 툴로 Tableau와 함�
   - 습득방법 : 독학, 대학원, 현업 종사
 - 상세 보유기술
   - 챗봇을 활용한 업무 보조
-    - 범용 AI : GPT-4o, GPT-4.1
+    - 범용 AI : GPT-5
     - 추론 및 코딩 : o3, gemini-2.5-pro, Claude 4 sonnet
     - 로컬에서 모델 다운로드 및 활용
-      - DeepSeek-R1, QwQ 등
-    - 코딩 보조 : Github Copilot, Cursor, Gemini CLI
+      - DeepSeek-R1, Qwen 등
+    - 코딩 보조 : Cursor, Github Copilot, Gemini CLI
   - 생성형 AI에서 원하는 결과물을 도출하기 위한 Prompt Engineering
   - Python 및 기타 언어 스크립트 작성 시 AI 활용 (바이브 코딩)
-  - OpenAI API 및 Ollama API를 활용한 Python 연계
+  - OpenAI API 및 Ollama, vllm API를 활용한 Python 연계
 
 #### 2.4.2. AI 워크플로우 구축
 
