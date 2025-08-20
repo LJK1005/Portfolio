@@ -11,14 +11,14 @@
       - [2.1.2. Python 패키지 사용](#212-python-패키지-사용)
       - [2.1.3. 머신러닝](#213-머신러닝)
       - [2.1.4. 딥러닝](#214-딥러닝)
-      - [2.1.5. LLM](#215-llm)
       - [2.1.6. etc](#216-etc)
-    - [2.2. SQL](#22-sql)
-    - [2.3. Business Intelligence (BI) Tools](#23-business-intelligence-bi-tools)
-      - [2.3.1. Microsoft Power BI](#231-microsoft-power-bi)
-    - [2.4. AI](#24-ai)
-      - [2.4.1. 생성형 AI 활용](#241-생성형-ai-활용)
-      - [2.4.2. AI 워크플로우 구축](#242-ai-워크플로우-구축)
+    - [2.2. AI](#22-ai)
+      - [2.2.1 LLM](#221-llm)
+      - [2.2.2. 생성형 AI 활용](#222-생성형-ai-활용)
+      - [2.2.3. AI 워크플로우 구축](#223-ai-워크플로우-구축)
+    - [2.3. SQL](#23-sql)
+    - [2.4. Business Intelligence (BI) Tools](#24-business-intelligence-bi-tools)
+      - [2.4.1. Microsoft Power BI](#241-microsoft-power-bi)
     - [2.5. etc](#25-etc)
       - [2.5.1. Streamlit 기반 웹 대시보드 구현](#251-streamlit-기반-웹-대시보드-구현)
       - [2.5.2. 스프레드시트](#252-스프레드시트)
@@ -111,8 +111,8 @@ Python 기반 데이터 및 AI 관련 주요 패키지들의 종류와 각 패�
     - OpenAPI 혹은 웹사이트에 대한 정적 크롤링 (Request, BeautifulSoup)
     - Javascript 기반 웹사이트의 데이터를 수집하는 동적 크롤링(Selenium)
   - 데이터 가공 및 정제, 전처리 작업 수행
-    - 수치, 배열 타입 데이터의 분석 및 가공 (Numpy)
-    - 시리즈, 데이터프레임 타입 데이터의 정제와 전처리 작업 수행 (Pandas, Polars, scikit-learn, Imblearn)
+    - 수치, 배열 타입 데이터 가공 (Numpy)
+    - 시리즈, 데이터프레임 타입의 전처리 작업 수행 (Pandas, Polars, scikit-learn, Imblearn)
   - 데이터 시각화
     - Matplotlib, Seaborn을 이용한 데이터 시각화
   - 통계분석
@@ -211,7 +211,19 @@ class YjkQuantileRegressor():
     - 훈련 데이터로 인경신경망 훈련 및 성능평가
     - 모델 튜닝으로 성능 개선
 
-#### 2.1.5. LLM
+#### 2.1.6. etc
+
+Python 사용시 반복적인 작업을 빠르게 수행하기 위해서 패키지를 직접 만들어서 활용한 경험이 있습니다.
+
+ex) 데이터 전처리 : 이상치, 결측치, 스케일링, 인코딩을 한번에 수행하는 패키지 구성
+
+![package](./res/package.png)
+
+- [Github1](https://github.com/LJK1005/Portfolio/blob/main/res/03_etc/Package/yjk_module/preprocessing.py)
+
+### 2.2. AI
+
+#### 2.2.1 LLM
 
 현재 AI 시장의 트렌드는 단연 생성형 AI라고 할 수 있습니다. LLM은 텍스트 데이터의 토큰화 과정을 통해 학습이 가능한 형태로 가공 후 학습하여 고전적인 분류의 활용은 물론이고 텍스트 생성을 비롯한 생성형 AI로서의 역할도 할 수 있으며, Stable Diffusion으로 대표되는 이미지 생성 모델과 함께 각 기업들이 큰 관심을 가지고 연구하는 분야입니다.
 
@@ -236,27 +248,52 @@ ex) google-bert/bert-base-uncased 모델의 LoRA + 양자화 미적용 / 적용�
       - [DACON1](https://dacon.io/competitions/official/236216/overview/description)
       - [Kaggle1](https://www.kaggle.com/competitions/learning-agency-lab-automated-essay-scoring-2)
 - 상세 보유기술 요약
-  - LLM의 개념 및 역할 이해
-  - HuggingFace를 통한 모델 및 토크나이저 다운로드
-    - 사용 모델 : LLaMA, Google Gemma, BERT, Solar, Mistral, GPT-2, DeepSeek-R1 등
+  - LLM과 트랜스포머 신경망의 개념 이해
+  - HuggingFace를 통한 모델 및 토크나이저 활용
+    - 사용 모델 : LLaMA, Google Gemma, BERT, Solar, Mistral, DeepSeek-R1 등
   - 텍스트 데이터의 전처리 수행 (형태소 분석, 불용어 처리 등) 및 토큰화
   - 훈련 데이터셋에 대한 모델 Fine-Tuning
     - 훈련된 LLM의 성능 측정 (코사인 유사도)
   - LoRA (peft)와 양자화 (bitsandbytes)를 사용한 모델 및 학습 경량화
 
-#### 2.1.6. etc
+#### 2.2.2. 생성형 AI 활용
 
-Python 사용시 반복적인 작업을 빠르게 수행하기 위해서 패키지를 직접 만들어서 활용한 경험이 있습니다.
+생성형 AI 서비스의 활용은 이제 현업에서 필수적인 역량 중 하나로 지식 습득, 정보 및 데이터 요약, 인사이트 도출 등의 주요 업무들을 보조하는 용도로 활용하고 있습니다.
 
-ex) 데이터 전처리 : 이상치, 결측치, 스케일링, 인코딩을 한번에 수행하는 패키지 구성
+- 기본 학습 정보
+  - 학습기간 : 2024.05 ~
+  - 습득방법 : 독학, 대학원, 현업 종사
+- 상세 보유기술
+  - 챗봇을 활용한 업무 보조
+    - 범용 AI : GPT-5
+    - 추론 및 코딩 : gemini-2.5-pro, Claude 4 sonnet
+    - 로컬에서 모델 다운로드 및 활용
+      - DeepSeek-R1, Qwen 등
+    - 코딩 보조 : Cursor, Github Copilot, Gemini CLI
+  - 생성형 AI에서 원하는 결과물을 도출하기 위한 Prompt Engineering
+  - Python 및 기타 스크립트 작성 시 AI 활용 (바이브 코딩)
+  - Python 상에서 OpenAI API 및 Ollama, vllm API를 활용
 
-![package](./res/package.png)
+#### 2.2.3. AI 워크플로우 구축
 
-- [Github1](https://github.com/LJK1005/Portfolio/blob/main/res/03_etc/Package/yjk_module/preprocessing.py)
+노드 기반의 자동화 플랫폼으로 AI를 활용한 업무 자동화를 구현할 수 있습니다. 최근 AI에서 중요성이 높아진 MCP에 대응하기 위해서 스킬을 키워나가고 있습니다.
 
-### 2.2. SQL
+- 기본 학습 정보
+  - 학습기간 : 2025.03 ~
+  - 습득방법 : 대학원, 독학
+- 상세 보유기술
+  - 노드 기반 자동화 플랫폼의 이해와 활용
+    - n8n
+    - ComfyUI
+      - n8n 상에서 ComfyUI를 API 형식으로 호출
+  - 자동화 플랫폼 상에서의 노드 활용
+    - 챗봇 연동 (OpenAI API, Ollama API)
+    - 논코딩 기반 RAG 활용 (Pinecone)
+    - Google Drive API 연동 결과물 저장
 
-SQL문을 이용한 DB의 조회, 데이터 관리, 수정, 삭제를 수행할 수 있습니다.
+### 2.3. SQL
+
+SQL문을 이용한 데이터 조회, 수정, 삭제 등의 데이터 핸들링이 가능합니다.
 
 주로 사용하는 DBMS 관리 도구는 DBeaver입니다.
 
@@ -271,61 +308,26 @@ SQL문을 이용한 DB의 조회, 데이터 관리, 수정, 삭제를 수행할 
     - 서브쿼리의 활용
     - Python과 연동한 DBMS 데이터 관리 (cx_Oracle - Oracle)
 
-### 2.3. Business Intelligence (BI) Tools
+### 2.4. Business Intelligence (BI) Tools
 
 BI 툴은 데이터 분석 및 시각화 도구로서 데이터 분석가로서는 필수적인 역량입니다. 저 또한 이를 이용하여 데이터 소스로부터 필요로 하는 시각화 객체 생성 및 인사이트를 도출하는 방법을 학습하고 실무에 적용하고 있습니다.
 
-#### 2.3.1. Microsoft Power BI
+#### 2.4.1. Microsoft Power BI
 
 Power BI는 마이크로소프트 사에서 제작한 BI 툴로 Tableau와 함께 데이터 분석 현업에서 널리 쓰이는 BI 소프트웨어입니다.
 
 - 기본 학습 정보
+
   - 학습기간 : 2024.11 ~
   - 습득방법 : 독학, 현업 종사
 - 상세 보유기술 요약
+
   - CSV / JSON 등 원본 파일 혹은 Python / SQL을 이용하여 데이터 로드 및 Power Query를 통한 데이터 전처리
   - Power BI 내 차트, 테이블 등 시각화 객체의 생성을 통한 데이터 시각화
   - DAX 함수를 통한 열 및 측정값 생성 및 활용
   - Python과 연동한 데이터 로드 및 시각화 객체 생성
   - 데이터 분석을 통한 인사이트 도출 및 코멘트 전달
   - 작성한 보고서의 퍼블리싱
-
-### 2.4. AI
-
-#### 2.4.1. 생성형 AI 활용
-
-생성형 AI의 활용은 이제 현업에서 필수적인 역량 중 하나로 지식 습득, 정보 및 데이터 요약, 인사이트 도출 등의 주요 업무들을 보조하는 용도로 활용하고 있습니다.
-
-- 기본 학습 정보
-  - 학습기간 : 2024.05 ~
-  - 습득방법 : 독학, 대학원, 현업 종사
-- 상세 보유기술
-  - 챗봇을 활용한 업무 보조
-    - 범용 AI : GPT-5
-    - 추론 및 코딩 : o3, gemini-2.5-pro, Claude 4 sonnet
-    - 로컬에서 모델 다운로드 및 활용
-      - DeepSeek-R1, Qwen 등
-    - 코딩 보조 : Cursor, Github Copilot, Gemini CLI
-  - 생성형 AI에서 원하는 결과물을 도출하기 위한 Prompt Engineering
-  - Python 및 기타 언어 스크립트 작성 시 AI 활용 (바이브 코딩)
-  - OpenAI API 및 Ollama, vllm API를 활용한 Python 연계
-
-#### 2.4.2. AI 워크플로우 구축
-
-노드 기반의 자동화 플랫폼으로 AI를 활용한 업무 자동화를 구현할 수 있습니다. 아직 관련 능력이 부족하지만 최근 AI에서 중요성이 높아진 MCP에 대응하기 위해서 적극적으로 스킬을 키워나가고 있습니다.
-
-- 기본 학습 정보
-  - 학습기간 : 2025.03 ~
-  - 습득방법 : 대학원, 독학
-- 상세 보유기술
-  - 노드 기반 자동화 플랫폼의 이해와 활용
-    - n8n
-    - ComfyUI
-      - n8n 상에서 ComfyUI를 API 형식으로 호출
-  - 자동화 플랫폼 상에서의 노드 활용
-    - 챗봇 연동 (OpenAI API, Ollama API)
-    - RAG 활용 (Pinecone)
-    - Google Drive API 활용 결과물 업로드
 
 ### 2.5. etc
 
