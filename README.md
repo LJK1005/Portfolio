@@ -452,6 +452,8 @@ Docker는 Linux의 대표적인 컨테이너 기술 및 서비스로 여러가�
 
 #### 3.3.1 Microsoft Azure
 
+#### 3.3.2 Google Cloud Platform (GCP)
+
 ### 3.4. etc
 
 #### 3.4.1. 개인 개발환경 구축
