@@ -265,10 +265,10 @@ ex) google-bert/bert-base-uncased 모델의 LoRA + 양자화 미적용 / 적용�
 - 상세 보유기술
   - 챗봇을 활용한 업무 보조
     - 범용 AI : GPT-5
-    - 추론 및 코딩 : gemini-2.5-pro, Claude 4 sonnet
+    - 추론 및 코딩 : gemini-3.0-pro, Claude 4 sonnet
     - 로컬에서 모델 다운로드 및 활용
       - DeepSeek-R1, Qwen 등
-    - 코딩 보조 : Cursor, Github Copilot, Gemini CLI
+    - 코딩 보조 : Cursor, Github Copilot, Gemini CLI, Codex
   - 생성형 AI에서 원하는 결과물을 도출하기 위한 Prompt Engineering
   - Python 및 기타 스크립트 작성 시 AI 활용 (바이브 코딩)
   - Python 상에서 OpenAI API 및 Ollama, vllm API를 활용
@@ -316,11 +316,9 @@ BI 툴은 데이터 분석 및 시각화 도구로서 데이터 분석가로서�
 Power BI는 마이크로소프트 사에서 제작한 BI 툴로 Tableau와 함께 데이터 분석 현업에서 널리 쓰이는 BI 소프트웨어입니다.
 
 - 기본 학습 정보
-
   - 학습기간 : 2024.11 ~
   - 습득방법 : 독학, 현업 종사
 - 상세 보유기술 요약
-
   - CSV / JSON 등 원본 파일 혹은 Python / SQL을 이용하여 데이터 로드 및 Power Query를 통한 데이터 전처리
   - Power BI 내 차트, 테이블 등 시각화 객체의 생성을 통한 데이터 시각화
   - DAX 함수를 통한 열 및 측정값 생성 및 활용
